@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body><h1>this passage has {{word_count}} words</h1>
+<a href="{% url 'home' %}"> click me for home</a>
+<br></br>
+{{article}}
+<h1>total count</h1>
+{% for word,num in dict_words %}
+<h1>{{word}}={{num}}</h1>
+
+
+
+{%  endfor  %}
+
+
+
+</body>
+</html>
